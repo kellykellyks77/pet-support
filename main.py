@@ -5,8 +5,8 @@ def fibonacci_of(n):
     if n in {0, 1}:
         return n
 
-    previous, fib_number = 0, 1
+    p, fibonacci_number = 0, 1
     for _ in range(2, n + 1):
-        previous, fib_number = fib_number, previous + fib_number
+        p, fibonacci_number = fibonacci_number, p + fibonacci_number
 
-    return fib_number
+    return fibonacci_number
